@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">My Portfolio</a>
+        </div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="animated-container">
+            <p class="animated-text"></p>
+        </div>
+        <button class="cta-button" onclick="scrollToSection('profile')">View My Profiles</button>
+    </div>
+
+    <!-- Profile Section -->
+    <!-- Profile Section -->
+<div id="profile" class="section">
+    <center>
+        <h2></h2>
+        <p></p>
+    </center>
+
+
+    <!-- Profile Carousel -->
+    <div class="carousel-container">
+        <!-- Left Arrow -->
+        <span class="arrow left">&#8592;</span>
+
+        <!-- Carousel Cards -->
+        <div class="carousel">
+            <div class="card">
+                <img src="lnd.jpg" alt="LinkedIn">
+                <h3>LinkedIn</h3>
+                <p>Professional networking site to connect with others in the industry.</p>
+                <a href="https://www.linkedin.com/in/rayen-samali-b59557246/" target="_blank">Visit LinkedIn</a>
+            </div>
+            <div class="card">
+                <img src="stak.png" alt="Stack Overflow">
+                <h3>Stack Overflow</h3>
+                <p>Q&A platform for programmers, where I contribute to the community.</p>
+                <a href="https://stackoverflow.com/users/24951546/rayen" target="_blank">Visit Stack Overflow</a>
+            </div>
+            <div class="card">
+                <img src="github.jpg" alt="GitHub">
+                <h3>GitHub</h3>
+                <p>My code repositories where I share my open-source projects.</p>
+                <a href="https://github.com/rayensamali" target="_blank">Visit GitHub</a>
+            </div>
+            <div class="card">
+                <img src="redt.png" alt="Reddit">
+                <h3>Reddit</h3>
+                <p>Follow me for tech discussions and more on the Reddit platform.</p>
+                <a href="https://www.reddit.com/user/blackcatTN/" target="_blank">Visit Reddit</a>
+            </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <span class="arrow right">&#8594;</span>
+    </div>
+</div>
+
+<div id="skills" class="section">
+    <center>
+        <h2>Skills</h2>    
+    </center>
+    <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+            <div class="skill-card" data-description="Proficient in embedded systems programming">
+                <span>C</span>
+            </div>
+            <div class="skill-card" data-description="Proficient in embedded systems programming and microcontrollers ">
+                <span>Embedded C</span>
+            </div>
+                <div class="skill-card" data-description="Object-oriented programming for hardware and software.">
+                    <span>C++</span>
+                </div>
+                <div class="skill-card" data-description="Scripting and automation for IoT and AI solutions.">
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" data-description="Low-level programming for hardware interactions and kernel development.">
+                    <span>Assembly</span>
+                </div>
+                <div class="skill-card" data-description="Android application development and OOP progeramming.">
+                    <span>Java</span>
+                </div>
+                <div class="skill-card" data-description="Digital design and simulation using hardware description language in FPGA .">
+                    <span>VHDL</span>
+                </div>
+                <div class="skill-card" data-description="Scripting for Linux-based automation and automation">
+                    <span>Shell</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category img_disp">
+            <h3>Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-description="FPGA design and simulation tool.">
+                    <span>Quartus</span>
+                </div>
+                <div class="skill-card" data-description="Code editor for multiple programming languages.">
+                    <span>VSCode</span>
+                </div>
+                <div class="skill-card" data-description="Integrated environment for Android development.">
+                    <span>Android Studio</span>
+                </div>
+                <div class="skill-card" data-description="UI design and desktop development framework.">
+                    <span>Qt Designer</span>
+                </div>
+                <div class="skill-card" data-description="Embedded system programming IDE.">
+                    <span>IAR Embedded Workbench</span>
+                </div>
+                <div class="skill-card" data-description="Toolchain for STM32 microcontroller development.">
+                    <span>STM32CubeIDE</span>
+                </div>
+                <div class="skill-card" data-description="Cross-platform C++ IDE.">
+                    <span>Code::Blocks</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Operating Systems -->
+        <div class="skill-category  img_os">
+            <h3>Operating Systems</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-description="Expertise in Linux-based system development.">
+                    <span>Linux</span>
+                </div>
+                <div class="skill-card" data-description="Proficient in development for Windows environments.">
+                    <span>Windows</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <center>
+            My Projects
+        </center>
+         <div class="father">
+            
+            <div class="container1">
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>GPIO  Driver</h2>
+                    <p>Developed a GPIO driver for STM32 in Embedded C using IAR Embedded Workbench, enabling efficient control and configuration of GPIO pins for various modes and operations.</p>
+                    <a href="gpio.html">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>STM32 IOT project</h2>
+                    <p>Developed an IoT project using STM32 and ThingSpeak, featuring sensor data collection, Wi-Fi communication via ESP8266, and real-time monitoring.</p>
+                    <a href="stmiot.html">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>Raspberry Pi-DHT11 IOT project</h2>
+                    <p>Developped an IOT project for reading data from  a DHT11 sensor by doing an I²C setup device driver and sending data to MQTT broker.</p>
+                    <a href="rsppy.html">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                      <h2>Basic C kernel</h2>
+                      <p>Designed and implemented a basic operating system kernel in C and Assembly, featuring core functionalities like process management, interrupt handling, and a custom file system.</p>
+                      <a href="kernel.html">Read More</a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <span></span>
+                    <div class="content">
+                      <h2>Smart house IOT project</h2>
+                      <p>Developped a basic smart house Project using adruino with a desktop application using C++ and QT.</p>
+                      <a href="house.html">Read More</a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <span></span>
+                    <div class="content">
+                      <h2>Help Casa mobile Android Application </h2>
+                      <p>Developped a fully functional Mobile application  using Java and XML with a no SQL cloud DataBase (FireBase).</p>
+                      <a href="mobile.html">Read More</a>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+         </div>
+       
+</div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. Built with ❤️ by <a href="#">Rayen</a>.</p>
+    </footer>
+
+    <script>
+// Typewriter effect
+const typewriter = (element, text, speed) => {
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+};
+
+// Ensure the DOM is fully loaded before executing typewriter effects
+document.addEventListener("DOMContentLoaded", () => {
+    // Hero section typing
+    const heroText = document.querySelector('.animated-text');
+    const heroMessage = "Hi! My name is Rayen, and I'm an Embedded Systems Developer passionate about creating innovative solutions in IoT, real-time systems, and microcontroller programming.";
+    typewriter(heroText, heroMessage, 40); // Typing effect for hero section
+
+    // Profile section typing
+    const profileHeading = document.querySelector('#profile h2');
+    const profileSubText = document.querySelector('#profile p');
+    const profileHeadingText = "My Profiles";
+    const profileSubTextMessage = "Connect with me on these platforms:";
+
+    // Delay profile typing to ensure smooth transition after hero section typing
+    setTimeout(() => {
+        typewriter(profileHeading, profileHeadingText, 100); // Typing effect for profile heading
+        setTimeout(() => {
+            typewriter(profileSubText, profileSubTextMessage, 50); // Typing effect for profile subtext
+        }, profileHeadingText.length * 100 + 500);
+    }, heroMessage.length * 40 + 1000); // Delay based on hero message length
+});
+
+// Carousel functionality
+const cards = document.querySelectorAll('.card');
+const prevButton = document.querySelector('.left');
+const nextButton = document.querySelector('.right');
+const carousel = document.querySelector('.carousel');
+
+let currentIndex = 0;
+
+// Function to update the carousel
+function updateCarousel() {
+    // Loop through cards and update the selected class
+    cards.forEach((card, index) => {
+        if (index === currentIndex) {
+            card.classList.add('selected');
+        } else {
+            card.classList.remove('selected');
+        }
+    });
+
+    // Calculate the offset to center the selected card
+    const cardWidth = cards[0].offsetWidth + 30; // Card width + margin
+    const offset = -currentIndex * cardWidth + (carousel.offsetWidth - cardWidth) / 2;
+
+    // Apply the transformation to the carousel
+    carousel.style.transform = `translateX(${offset}px)`;
+}
+
+// Event listener for the left arrow
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
+    updateCarousel();
+});
+
+// Event listener for the right arrow
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
+    updateCarousel();
+});
+
+// Ensure the carousel updates properly on window resize
+window.addEventListener('resize', updateCarousel);
+
+// Initialize the carousel to set the correct position
+updateCarousel();
+
+
+    </script>
+</body>
+</html>

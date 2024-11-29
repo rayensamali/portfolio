@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi IoT Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #14141f;
+            color: #fff;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f2e;
+            padding: 15px 20px;
+        }
+
+        .navbar .logo a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar .links a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .links a:hover {
+            color: #007bff;
+        }
+
+        /* Main container styles */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Image on the left, text on the right */
+            gap: 20px;
+            align-items: center;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            gap: 15px;
+            background-color: #181717;
+            outline: 3px #181717 solid;
+            outline-offset: -3px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: 400ms;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .button:hover {
+            background-color: transparent;
+        }
+
+        .button:hover .text {
+            color: #ffffff;
+        }
+
+       /* From Uiverse.io by aadium */ 
+.card {
+  width: 500px;
+  height: 300px;
+  background: #15001f;
+  border: 1px solid #c042ff;
+  font-size: 14px;
+  font-family: monospace;
+  overflow: auto;
+}
+
+.titlebar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  font-weight: 450;
+  background-color: #2e0043;
+  width: 100%;
+  text-align: right;
+}
+
+.card button {
+  width: 40px;
+  height: 35px;
+  margin-left: -5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: 0.2s;
+}
+
+button svg path, 
+button svg rect, 
+button svg polygon {
+  fill: #ffffff;
+}
+
+button svg {
+  width: 10px;
+  height: 10px;
+}
+
+.close:hover {
+  background-color: #e81123;
+}
+
+.maximize:hover {
+  background-color: #c042ff2e;
+}
+
+.minimize:hover {
+  background-color: #c042ff2e;
+}
+
+#pre {
+  overflow: auto;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  color: #bafff8;
+}
+
+.curlies {
+  color: #ff0000;
+}
+
+.sc {
+  color: #e600ff;
+}
+
+.rounds {
+  color: #ffffff;
+}
+
+.operator {
+  color: #ffff00;
+}
+
+.s1 {
+  color: #22ff00;
+}
+
+.s2 {
+  color: #4281ff;
+}
+
+.s3 {
+  color: #ff4284;
+}
+
+.s4 {
+  color: #ffae00;
+}
+
+.s5 {
+  color: #ffffff;
+}
+
+.s6 {
+  color: #ffff00;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">My Portfolio</a>
+        </div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="image">
+<div class="card">
+  <div class="titlebar">
+    <span class="buttons">
+    <button class="minimize">
+			<svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1"></rect></svg>
+		</button>
+    <button class="maximize">
+			<svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path></svg>
+		</button>
+    <button class="close">
+			<svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon></svg>
+		</button>
+    </span>
+  </div>
+  <div class="cppcode">
+    <pre id="pre"><code><span class="s1">#include</span> <span class="s2">&lt;Rayenh's projects&gt;</span>
+using<span class="s3"> namespace </span>std<span class="sc">;</span>
+
+<span class="s3">int</span> <span class="s2">main()</span> <span class="curlies">{</span>
+
+
+  <span class="s4">cout</span> <span class="s5">&lt;&lt;</span> <span class="s1">"Raspberry py IOT Project with I²C protocol <span class="sc">;</span>
+      <span class="s6">return</span> 0<span class="sc">;</span>
+
+<span class="curlies">}</span>
+    </code></pre>
+  </div>
+</div>
+
+        </div>
+        <div class="text-content">
+            <h1>Raspberry Pi IoT Project</h1>
+            <p>
+                This IoT project uses a Raspberry Pi to interface with various sensors such as temperature, humidity, and motion sensors. The readings from these sensors 
+                are transmitted to a cloud server using MQTT, enabling real-time monitoring and data collection. The project aims to showcase the capabilities of Raspberry Pi 
+                in the IoT ecosystem and its potential in smart home applications, environmental monitoring, and automation.
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
